@@ -13,4 +13,8 @@ class HighScores
   def scores
     @scores
   end
+
+  def latest
+    @scores[-1]
+  end
 end
