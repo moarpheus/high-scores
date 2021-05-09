@@ -21,4 +21,8 @@ class HighScores
   def personal_top_three
     @scores.sort.reverse[0..2]
   end
+
+  def personal_best
+    @scores.sort[-1]
+  end
 end
