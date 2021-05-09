@@ -25,4 +25,8 @@ class HighScores
   def personal_best
     @scores.sort[-1]
   end
+
+  def latest_is_personal_best?
+    latest == personal_top_three[0]
+  end
 end
