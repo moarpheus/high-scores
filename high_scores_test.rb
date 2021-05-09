@@ -4,14 +4,12 @@ require_relative 'high_scores'
 # Common test data version: 5.0.0 7dfb96c
 class HighScoresTest < Minitest::Test
   def test_list_of_scores
-    # skip
     scores = [30, 50, 20, 70]
     expected = [30, 50, 20, 70]
     assert_equal expected, HighScores.new(scores).scores
   end
 
   def test_latest_score
-    skip
     scores = [100, 0, 90, 30]
     expected = 30
     assert_equal expected, HighScores.new(scores).latest
